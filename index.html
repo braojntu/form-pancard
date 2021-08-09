@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pan Online Application Form</title>
+</head>
+
+<style>
+    span {
+        color: red;
+    }
+
+    main {
+        margin: 0px 0px 0px 0px;
+    }
+
+    h4 {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    p {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    table,
+    tr,
+    td {
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<body>
+    <main>
+        <div class="form" style="background-color: beige; ">
+            <div class="form-header" style="background-color: maroon; color:white; text-align: center;">
+                <h4> Request for new PAN Card / Changes in the PAN Card </h4>
+                <p style="font-style: italic;"> Fields marked with <span>*</span> asteriks are
+                    Mandatory.
+                    To avoid mistakes
+                    please refer <u style="color: yellow">guidelines</u> and <u style="color: yellow">instructions</u>
+                </p>
+            </div>
+
+            <div style="font-weight: bold;">
+                <table style="width: 100%;">
+                    <tr>
+                        <td></td>
+                        <td>
+                            <span>*</span>Whether is a citizen of india
+                            <label for="yes" style="padding-left:40px; font-weight: lighter;">Yes</label>
+                            <input id="yes" type="radio" name="gender" value="">
+                            <label for="no" style="padding-left:40px; font-weight: lighter;">No</label>
+                            <input id="no" type="radio" name="gender" value="">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <span>*</span>Permanent Account Number (PAN)
+                            <input id="pan" type="text" name="pan" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="name" type="checkbox" name="name" value=""
+                                style="margin: center; border-radius: 2px;">
+                        </td>
+                        <td>
+                            <label for="name">1. Name</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <span>*</span>Title
+                            <label for="mr" style="padding-left:40px; font-weight: lighter;">Shri./Mr.</label>
+                            <input id="mr" type="radio" name="title" value="">
+                            <label for="mrs" style="padding-left:40px; font-weight: lighter;">Smt./Mrs.</label>
+                            <input id="mrs" type="radio" name="title" value="">
+                            <label for="ms" style="padding-left:40px; font-weight: lighter;">Kumari/Ms.</label>
+                            <input id="ms" type="radio" name="title" value="">
+                            <label for="messer" style="padding-left:40px; font-weight: lighter;">M/s</label>
+                            <input id="messer" type="radio" name="title" value="">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div style="display: inline-block; ">
+                                <label for="lname">Last Name/Surname</label> <br>
+                                <input id="lname" type="text" name="lname" value="" style="padding-left:40px">
+                            </div>
+
+                            <div style="display: inline-block;padding-left: 250px;">
+                                <label for="fname">First Name</label> <br>
+                                <input id="fname" type="text" name="fname" value="" style="padding-left:40px">
+                            </div>
+
+                            <div style="display: inline-block;padding-left: 250px;">
+                                <label for="mname">Middle Name</label> <br>
+                                <input id="mname" type="text" name="mname" value="" style="padding-left:40px">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div style="display: inline-block;">
+                                <label for="display-name"><span>*</span>Name as you like it printed on the card</label>
+                                <br>
+                                <input id="display-name" type="text" name="display-name" size="50">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+
+</html>
